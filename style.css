@@ -278,6 +278,87 @@ body{
     line-height: 26px;
     border-radius: 12px;
 }
+.grocery-service{
+    padding: 32px;
+}
+.grocery-service h2{
+    font-size: 23px;
+    line-height: 32px;
+    color: #343538;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 32px;
+    max-width: 450px;
+    margin-inline: auto;
+}
+.service-img{
+    border-radius: 8px;
+    overflow: hidden;
+}
+.service-mobile{
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+.service-web{
+    display: none;
+}
+.service-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+.service-card{
+    padding: 32px;
+    background-color: #F6F7F8;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.service-card h3{
+    font-size: 28px;
+    font-family: font-semibold;
+    line-height: 32px;
+    color: #343538;
+    padding: 1px 6px;
+}
+.service-card p{
+    display: none;
+}
+.questions{
+    padding: 32px 32px 60px;
+    max-width: 950px;
+    margin-inline: auto;
+}
+.questions h2{
+    font-size: 23px;
+    line-height: 32px;
+    color: #343538;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.questionare{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 1px solid #e8e9eb;
+}
+.question-text{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: normal;
+    color: #343538;
+}
+.plus{
+    margin: 24px 0 24px 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 @media screen and (min-width:375px) {
     .logo{
@@ -444,6 +525,33 @@ body{
     .instacart-app{
         display: none;
     }
+    .grocery-service h2{
+        font-size: 28px;
+        line-height: 32px;
+        margin-top: 32px;
+    }
+    .service-mobile{
+        display: none;
+    }
+    .service-web{
+        display: flex;
+        width: 100%;
+    }
+    .questionare{
+        padding-block: 24px;
+    }
+    .questions h2{
+        font-size: 31px;
+        line-height: 40px;
+        margin-bottom: 24px;
+    }
+    .question-text{
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .plus{
+        margin-left: 25%;
+    }
 }
 
 @media screen and (min-width:776px) {
@@ -478,6 +586,10 @@ body{
         grid-template-columns: repeat(3, 1fr);
         gap: 24px;
     }
+    .grocery-service{
+        max-width: 1152px;
+        margin-inline: auto;
+    }
     .grocery-card{
         margin-right: 0;
         justify-content: space-between;
@@ -488,6 +600,20 @@ body{
         margin-top: 48px;
         max-width: 280px;
         margin-bottom: 0;
+    }
+    .service-card h3{
+        padding: 0;
+    }
+    .service-card p{
+        display: block;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: normal;
+        color: #343538;
+        margin-top: 24px;
+    }
+    .questions{
+        padding: 0;
     }
 }
 
@@ -502,5 +628,19 @@ body{
     .grocery-text h3{
         font-size: 31px;
         line-height: 40px;
+    }
+    .service-list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+    }
+    .service-card h3{
+        font-size: 31px;
+        line-height: 40px;
+        max-width: 180px;
+    }
+    .service-card p{
+        font-size: 23px;
+        line-height: 28px;
     }
 }
